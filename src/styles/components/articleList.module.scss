@@ -1,0 +1,28 @@
+.viewToggle {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+
+  button {
+    background: var(--card-bg);
+    color: var(--text);
+    border: none;
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: #4f46e5;
+      color: white;
+    }
+
+    &.active {
+      background: #4f46e5;
+      color: white;
+      font-weight: bold;
+    }
+  }
+}

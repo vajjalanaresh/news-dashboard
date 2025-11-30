@@ -1,0 +1,22 @@
+$color-bg-light: #ffffff;
+$color-bg-dark: #0b1020;
+$color-text-light: #111827;
+$color-text-dark: #e5e7eb;
+$primary: #4f46e5;
+$spacing: 16px;
+
+$bp-sm: 480px;
+$bp-md: 768px;
+$bp-lg: 1024px;
+// styles/_variables.scss
+:root {
+  --bg: #ffffff;
+  --text: #111111;
+  --card-bg: #f9f9f9;
+}
+
+[data-theme="dark"] {
+  --bg: #121212;
+  --text: #eeeeee;
+  --card-bg: #1e1e1e;
+}
