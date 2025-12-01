@@ -11,12 +11,14 @@ body {
 
 }
   input{
-        background: #80808057;
-    border: 0;
+    background: #d9d2d2cc;
+    border:0;
+    box-shadow: rgba(149, 157, 165, 0.2) 40px 40px 40px;
 }
   select{
-        background: #80808057;
-    border: 0;
+        background: #d9d2d2cc;
+    border:0;
+    box-shadow: rgba(149, 157, 165, 0.2) 40px 40px 40px;
 }
 
 
