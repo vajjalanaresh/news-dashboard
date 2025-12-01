@@ -7,8 +7,12 @@ import ArticleList from "../components/content/ArticleList";
 import Dashboard from "../components/charts/Dashboard";
 import SkeletonCard from "../components/utility/SkeletonCard";
 import EmptyState from "../components/utility/EmptyState";
+import useTheme from "../hooks/useTheme";
+import styles from "../styles/components/header.module.scss";
 
 export default function Home() {
+  const { theme, toggle } = useTheme("light");
+
   const [view, setView] = useState("grid"); // 'grid' | 'list'
   const { articles, totalResults, filters, setFilters, load, loading, error } =
     useNewsAPI({
@@ -86,7 +90,24 @@ export default function Home() {
   // console.log(filters, "articles---");
 
   return (
-    <div className="space-y-6" style={{ margin: "16px 0px" }}>
+    <div className="space-y-6" >
+      <button
+        aria-label="Toggle theme"
+        onClick={toggle}
+        className={styles.toggle}
+        style={{
+          width: "fit-content",
+          background: "none",
+          display: "flex",
+          marginLeft: "auto",
+          border: "0",
+          marginTop: "9px",
+        }}
+      >
+        <span style={{ fontSize: "2rem" }}>
+          {theme === "light" ? "🌞" : "🌙"}
+        </span>
+      </button>
       <SearchBar defaultValue={filters.q} onSearch={handleSearch} />
       <FilterPanel filters={filters} onChange={handleFilter} />
       <Dashboard data={chartData} />

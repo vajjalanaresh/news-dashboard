@@ -1,6 +1,5 @@
 import { Link, NavLink } from "react-router-dom";
 import useTheme from "../../hooks/useTheme";
-import useBookmarks from "../../hooks/useBookmarks";
 import styles from "../../styles/components/header.module.scss";
 import { useContext } from "react";
 import AppConfigContext from "../Context/AppConfigContext";
