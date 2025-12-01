@@ -62,7 +62,7 @@ button, a {
 }
 
 .main {
-  margin-left: 220px;
+  margin-left: 94px;
   width: calc(100% - 220px);
   padding: 1rem;
 
@@ -75,6 +75,9 @@ button, a {
 
 .layout {
   display: flex;
+      background: var(--bg);
+    color: var(--text);
+height: 100vh;
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -82,7 +85,7 @@ button, a {
 }
 
 .main {
-  margin-left: 156px;
+  margin-left: 94px;
   // padding: 2rem;
   width: calc(100% - 220px);
 
@@ -109,3 +112,5 @@ button, a {
     display: block;
   }
 }
+
+

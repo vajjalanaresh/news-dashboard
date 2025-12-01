@@ -90,7 +90,7 @@ export default function Home() {
   // console.log(filters, "articles---");
 
   return (
-    <div className="space-y-6" >
+    <div className="space-y-6">
       <button
         aria-label="Toggle theme"
         onClick={toggle}
