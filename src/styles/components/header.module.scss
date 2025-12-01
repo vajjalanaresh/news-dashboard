@@ -13,7 +13,7 @@
 
 .searchBar, .filters {
   display: grid; gap: 8px; grid-template-columns: 1fr repeat(3, auto); align-items: center;
-  margin: $spacing 0;
+  margin: 16px 11px;
   input, select, button { padding: 8px 12px; }
 }
 
@@ -146,4 +146,55 @@
   &:active {
     transform: scale(0.95);
   }
+}
+
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .toggle {
+    margin-top: 0.5rem;
+  }
+}
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: var(--header-bg);
+  color: var(--header-text);
+}
+
+.nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    gap: 1rem;
+    display: none; // hide by default
+  }
+
+  .nav.open {
+    display: flex; // show when toggled
+  }
+}
+
+.filters{
+  margin: 16px 10px !important;
 }

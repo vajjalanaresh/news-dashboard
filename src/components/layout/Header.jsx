@@ -7,7 +7,6 @@ import AppConfigContext from "../Context/AppConfigContext";
 
 export default function Header() {
   const { theme, toggle } = useTheme("light");
-  const { bookmarks } = useBookmarks();
   const { getBookmarkcount } = useContext(AppConfigContext);
   console.log(getBookmarkcount, "headerbookmarkcount---");
   return (

@@ -1,70 +1,82 @@
-# Getting Started with Create React App
+# 📰 News Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+An interactive **React-based news dashboard** that fetches articles from APIs, supports bookmarking, CSV export, and visual insights with charts. Designed to be responsive, modern, and interview‑ready.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Features
 
-### `npm start`
+- **Dynamic News Feed** – Fetches articles from APIs (NewsAPI, Guardian, etc.)
+- **Bookmark System** – Add/remove bookmarks with live count via Context
+- **CSV Export** – Export bookmarks to a clean CSV file
+- **Responsive UI** – Modern layout with SCSS, Flowbite, and react-icons
+- **Theme Toggle** – Switch between light 🌞 and dark 🌙 modes
+- **Charts & Insights** – Category distribution with Recharts (Bar, Pie, Line)
+- **LocalStorage Persistence** – Bookmarks survive page refresh
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📂 Project Structure
 
-### `npm test`
+src/
+ ├── components/
+ │    ├── Header.jsx
+ │    ├── Layout.jsx
+ │    ├── ArticleCard.jsx
+ │    └── charts/
+ │         └── CategoryChart.jsx
+ │
+ ├── context/
+ │    └── BookmarkContext.jsx
+ │
+ ├── hooks/
+ │    ├── useBookmarks.js
+ │    └── useTheme.js
+ │
+ ├── styles/
+ │    └── components/
+ │         ├── header.module.scss
+ │         └── layout.module.scss
+ │
+ └── App.jsx
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## ⚙️ Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+# Clone the repo
+git clone https://github.com/your-username/news-dashboard.git
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Navigate into project
+cd news-dashboard
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Install dependencies
+npm install
 
-### `npm run eject`
+# Start development server
+npm run dev
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+**Usage**
+Home Page → Browse latest articles
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Bookmarks Page → View saved articles with live count
 
-## Learn More
+Export Button → Download bookmarks as CSV
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Charts → Visualize categories and stats
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Theme Toggle → Switch between light/dark mode
 
-### Code Splitting
+**Tech Stack**
+React (hooks, context API)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+SCSS (responsive styling)
 
-### Analyzing the Bundle Size
+Flowbite + react-icons (UI polish)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Recharts (data visualization)
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+LocalStorage (bookmark persistence)

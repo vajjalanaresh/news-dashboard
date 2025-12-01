@@ -86,7 +86,7 @@ export default function Home() {
   // console.log(filters, "articles---");
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-6" style={{ margin: "16px 0px" }}>
       <SearchBar defaultValue={filters.q} onSearch={handleSearch} />
       <FilterPanel filters={filters} onChange={handleFilter} />
       <Dashboard data={chartData} />

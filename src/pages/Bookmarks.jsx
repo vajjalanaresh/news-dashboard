@@ -13,9 +13,11 @@ export default function Bookmarks() {
           display: "flex",
           justifyContent: "space-between",
           marginBottom: 16,
+          flexDirection: "column",
+          alignItems: "end",
         }}
       >
-        <h2>Bookmarks</h2>
+        <h2 style={{ margin: "auto" }}>Bookmarks</h2>
         <button
           onClick={() => exportCSV(bookmarks, "bookmarks.csv")}
           style={{
@@ -24,7 +26,7 @@ export default function Bookmarks() {
             fontWeight: 600,
             padding: "0.5rem 1.6rem",
             border: "none",
-            borderRadius: "50px", // pill shape
+            borderRadius: "10px", // pill shape
             cursor: "pointer",
             display: "inline-flex",
             alignItems: "center",
@@ -32,6 +34,8 @@ export default function Bookmarks() {
             fontSize: "1rem",
             boxShadow: "0 4px 12px rgba(0,0,0,0.15)",
             transition: "all 0.3s ease",
+            marginRight: "16px",
+            marginTop: "1rem",
           }}
           onMouseOver={(e) => {
             e.currentTarget.style.transform = "translateY(-2px) scale(1.05)";
@@ -42,7 +46,7 @@ export default function Bookmarks() {
             e.currentTarget.style.boxShadow = "0 4px 12px rgba(0,0,0,0.15)";
           }}
         >
-          Export Bookmarks
+          Export
         </button>
       </div>
       {bookmarks.length === 0 ? (

@@ -32,3 +32,14 @@ body {
 * {
   box-sizing: border-box;
 }
+
+@media (max-width: 480px) {
+  .export-btn {
+    font-size: 0.9rem;
+    padding: 0.6rem 1rem;
+  }
+
+  .brand {
+    font-size: 1.4rem;
+  }
+}

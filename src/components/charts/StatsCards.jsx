@@ -5,7 +5,9 @@ export default function StatsCards({ stats }) {
       style={{
         display: "grid",
         gridTemplateColumns: "repeat(3, 1fr)",
-        gap: 16,
+        gap: "29px",
+        margin: "auto",
+        textAlign: "center",
       }}
     >
       <div className="stat-card">

@@ -2,7 +2,7 @@
 
 .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
 .list { display: grid; grid-template-columns: 1fr; gap: 12px; }
-.viewSwitch { display: flex; gap: 8px; margin-bottom: 12px;
+.viewSwitch { display: flex; gap: 8px; margin-bottom: 12px; margin-left:15px;
   .active { font-weight: 700; }
 }
 

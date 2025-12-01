@@ -21,6 +21,7 @@ export default function SearchBar({ defaultValue = "", onSearch }) {
         aria-label="Search articles"
         placeholder="Search news..."
         value={q}
+        style={{ width: "100%" }}
         onChange={(e) => setQ(e.target.value)}
       />
     </div>
