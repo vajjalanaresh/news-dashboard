@@ -66,4 +66,43 @@
 }
 
 
- 
+ .viewSwitch {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.dropdown {
+  background: linear-gradient(135deg, #4f46e5, #6366f1);
+  color: #fff;
+  font-weight: 600;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  box-shadow: 0 1px 7px rgb(187 159 202 / 53%);
+  transition: all 0.3s ease;
+
+  // remove default browser arrow
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+margin-right: 1rem;
+margin-top: 1rem;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='white' height='20' viewBox='0 0 24 24' width='20'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 0.8rem center;
+  background-size: 1rem;
+
+
+  &:hover {
+    background: linear-gradient(135deg, #4338ca, #4f46e5);
+  }
+
+  option {
+    background: #fff;
+    color: #111827;
+    font-weight: 500;
+  }
+}
